@@ -1,0 +1,8 @@
+PROJECT(cec17)
+ADD_EXECUTABLE(puebloExpl "puebloExpl.cc")
+ADD_EXECUTABLE(puebloExplBL "puebloExplBL.cc")
+ADD_EXECUTABLE(mejoraPuebloExpl "mejoraPuebloExpl.cc")
+ADD_LIBRARY("cec17_test_func" SHARED "cec17_test_func.c" "cec17.c")
+TARGET_LINK_LIBRARIES(puebloExpl "cec17_test_func")
+TARGET_LINK_LIBRARIES(puebloExplBL "cec17_test_func")
+TARGET_LINK_LIBRARIES(mejoraPuebloExpl "cec17_test_func")
